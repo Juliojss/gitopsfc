@@ -1,0 +1,27 @@
+GitOps
+
+Fluxo de entrega
+                                    
+Aplicação -> Repositório -> CI -> CD -> K8S Cluster
+
+
+- Escrevemos códigos
+- Subimos para o repositório GIT
+- CI é acionado (testes, sonar, lint)
+- CD é acionado (gera uma imagem docker e aplica no K8S)
+- K8S Cluster
+
+
+Nesse fluxo tradicional não garantimos o que está rodando no k8s é o que está no git e 
+o repositório git só tem responsabilidade de armazenar o código
+
+
+Já usando GitOps fazemos com que o repositório seja a fonte da verdade e garantimos o que está rodando
+no K8S é o que está no git
+
+
+Como integrar e fazer com que o nosso repositório seja o centro das atenções?
+
+
+Aplicação -> Repositório -> CI -> CD -> Commit (Nova versão de forma declarativa)
+Agente (fica olhando repositório) -> K8S Cluster
