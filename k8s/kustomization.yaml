@@ -8,4 +8,4 @@ resources:
 images:
 - name: goserver
   newName: juliojss/gitopsfc
-  newTag: 18e273a6129789742bfb1ad4dbfef7bbc971e9a5
+  newTag: 551c90b42bfb109c7f5e5abc6bc7c4db9d5a7478
